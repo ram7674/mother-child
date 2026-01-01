@@ -157,7 +157,7 @@ h6 {
   background: var(--surface-color);
   border-radius: 50px;
   padding: 5px 25px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 15px rgba(207, 138, 138, 0.1);
 }
 
 .header .logo {
@@ -165,7 +165,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 53px;
   margin-right: 8px;
 }
 
