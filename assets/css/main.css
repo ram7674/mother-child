@@ -43,7 +43,7 @@
 
 .light-background {
   --background-color: #1f1f1f;
-  --surface-color: #ffffff;
+  --surface-color: #000;
 }
 
 .dark-background {
@@ -5070,7 +5070,6 @@ section,
 }
 
 .contact .contact-info-panel {
- /*  background: linear-gradient(145deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #1a4372 40%)); */
   background: #000;
   color: var(--contrast-color);
   border-radius: 20px;
@@ -5921,4 +5920,134 @@ section,
   padding-top: 60px;
   padding-bottom: 60px;
   /* Add your styles here */
+}
+
+
+
+
+.suma-section {
+  background: #1f1f1f;
+  padding: 60px 20px;
+  font-family: "Georgia", serif;
+}
+
+.suma-hero {
+  position: relative;
+  /* height: 320px; */
+}
+
+.suma-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.suma-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.suma-hero-title {
+  font-size: 36px;
+}
+
+.suma-hero-subtitle {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.suma-container {
+  max-width: 90%;
+  margin: auto;
+  background: #1f1f1f;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.suma-header {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.suma-doctor-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #034ea1;
+}
+
+.suma-name {
+  font-size: 28px;
+  color: #034ea1;
+}
+
+.suma-designation {
+  color: #ffffff;
+}
+
+.suma-text {
+  font-size: 17px;
+  margin-bottom: 22px;
+  line-height: 1.8;
+  color: #ffffff;
+  text-align: justify;
+}
+
+.suma-quote {
+  background: #1f1f1f;
+  padding: 25px;
+  margin: 40px 0;
+  border-left: 5px solid #034ea1;
+  font-style: italic;
+}
+
+.suma-quote span {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.suma-image-img {
+  display: flex;
+  width: 100%;
+  justify-content:flex-start;
+img {
+  width: 36%;
+  height: 478px;
+  border-radius: 10px;
+  margin: 40px 10px;
+}
+}
+.suma-image-break img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 40px 0;
+}
+
+.suma-signature {
+  margin-top: 50px;
+  text-align: right;
+  font-size: 16px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .suma-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .suma-container {
+    padding: 25px;
+  }
 }
