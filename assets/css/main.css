@@ -6017,17 +6017,25 @@ section,
   font-size: 14px;
 }
 
-.suma-image-img {
+.suma-child-card{
+ display: flex;
+}
+
+.suma-image-card1 {
   display: flex;
-  width: 100%;
-  justify-content:flex-start;
+  width: 50%;
 img {
-  width: 36%;
-  height: 478px;
+  width: 47%;
   border-radius: 10px;
   margin: 40px 10px;
 }
 }
+
+.suma-image-card2 {
+  padding: 28px 0px 0px 30px;
+  width: 50%;
+}
+
 .suma-image-break img {
   width: 100%;
   border-radius: 10px;
