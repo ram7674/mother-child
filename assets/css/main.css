@@ -849,6 +849,22 @@ section,
   display: block;
 }
 
+
+
+.roadmap-image {
+  width: 100%;
+  height: 100vh;          /* Full screen height */
+  overflow: hidden;
+}
+
+.roadmap-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* Image covers full area without distortion */
+  display: block;
+  border-radius: 20px;
+}
+
 /*--------------------------------------------------------------
 # Home youtube videos Section
 --------------------------------------------------------------*/
