@@ -706,7 +706,7 @@ h6 {
 
 .page-title {
     text-align: center;
-    padding: 17px 0 0;
+    padding: 130px 0 0;
 }
 
 .page-title .breadcrumbs {
@@ -1051,9 +1051,9 @@ section,
 }
 
 .home-about .about-content h2 {
-  margin-bottom: 16px;
-  font-weight: 700;
-  font-size: 32px;
+    margin-bottom: 7px;
+    font-weight: 700;
+    font-size: 26px;
 }
 
 @media (max-width: 768px) {
@@ -1710,6 +1710,10 @@ section,
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 92%);
   transition: all 0.3s ease;
   height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .departments .department-card:hover {
@@ -1768,7 +1772,8 @@ section,
   border-radius: 12px;
   overflow: hidden;
   margin-bottom: 20px;
-  height: 140px;
+  height: 209px;
+  width: 312px;
 }
 
 .departments .department-image-wrapper img {
@@ -4840,12 +4845,13 @@ section,
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #034ea1;
+  border: 4px solid #049ebb;
 }
 
 .suma-name {
   font-size: 28px;
-  color: #034ea1;
+  color: #049ebb;
+  font-weight: 700;
 }
 
 .suma-designation {
@@ -4880,10 +4886,10 @@ section,
 
 .suma-image-card1 {
   display: flex;
-  width: 50%;
+  width: 26%;
 
   img {
-    width: 47%;
+    width: 100%;
     border-radius: 10px;
     margin: 40px 10px;
   }
@@ -4891,7 +4897,7 @@ section,
 
 .suma-image-card2 {
   padding: 28px 0px 0px 30px;
-  width: 50%;
+  width: 76%;
 }
 
 .suma-image-break img {
@@ -4920,9 +4926,168 @@ section,
 
 
 
+/* about timelines css start */
+.about-page-main-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.about-page-btns {
+  margin: 10px;
+}
 
+.nav-pills .nav-link{
+    background-color: #363636;
+    color: #fff;
+}
 
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #049ebb;
+    background-color: #363636;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 0;
+}
+
+/* Center Red Line */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background: #049ebb;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Timeline Item */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+}
+
+/* Left & Right Positions */
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+/* Circle */
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border: 3px solid #049ebb;
+  border-radius: 50%;
+  top: 35px;
+  z-index: 1;
+}
+
+.timeline-item.left::after {
+  right: -8px;
+}
+
+.timeline-item.right::after {
+  left: -8px;
+}
+
+/* Card */
+.timeline-text {
+  background: #363636;
+  padding: 28px;
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+/* Blue Accent Line */
+.timeline-text::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background: #049ebb;
+  top: 0;
+}
+
+.timeline-item.left .timeline-text::before {
+  right: 0;
+}
+
+.timeline-item.right .timeline-text::before {
+  left: 0;
+}
+
+/* Date */
+.timeline-date {
+  color: #049ebb;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Text Styles */
+.timeline-text h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.timeline-text h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.timeline-text p {
+  font-size: 15px;
+  color: #ffffff;
+  text-align: start;
+}
+
+/* ================= MOBILE VIEW ================= */
+
+@media (max-width: 767px) {
+
+  .timeline::after {
+    left: 25px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 20px;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+    text-align: left;
+  }
+
+  .timeline-item::after {
+    left: 17px;
+  }
+
+  .timeline-text::before {
+    left: 0 !important;
+  }
+}
+/* about timelines css end */
 
 
 
@@ -4937,7 +5102,7 @@ section,
 /* ========= Large Mobile ========= */
 @media (max-width: 767px) {
   .hero-image {
-    background-image: url("/assets/img/gallery/banner-home-mobile-pis2.jpg");
+    background-image: url("/assets/img/gallery/banner-home-mobile-pis3.jpg");
   }
 
   .generate-title .title-wrapper h1 {
@@ -4977,6 +5142,10 @@ section,
     padding: 13px;
   }
 
+  .page-title .title-wrapper h1 {
+    padding: 40px 0px 0;
+  }
+
   section,
   .section {
     padding: 60px 0 0px;
@@ -4985,6 +5154,35 @@ section,
   .g-5, .gy-5 {
     --bs-gutter-y: 0rem;
   }
+
+
+  /* about */
+  .suma-section {
+    padding: 42px 11px;
+  }
+
+  .suma-child-card {
+    flex-direction: column;
+  }
+
+  .suma-image-card1 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .suma-container {
+    padding: 5px;
+  }
+
+  .suma-image-card2 {
+    padding: 0px;
+    width: 100%;
+  }
+
+  .suma-text {
+    font-size: 14px;
+  }
+
 
 }
 
